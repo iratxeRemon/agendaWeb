@@ -1,0 +1,58 @@
+/* src/App.css */
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.App-header {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  flex: 0 0 auto; /* No se estira y mantiene su tamaño automático */
+  font-size: 7px;
+  border-style: double;
+}
+
+.contenedor {
+  display: flex;
+  flex: 1; /* Ocupa todo el espacio restante verticalmente */
+}
+
+.menu-lateral {
+  background-color: #282c34;
+  color: white;
+  width: 200px; /* Ancho inicial del menú lateral */
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral ul li {
+  padding: 10px;
+}
+
+.menu-lateral ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-lateral ul li a:hover {
+  text-decoration: underline;
+}
+
+.cuerpo {
+  flex: 1; /* Ocupa todo el espacio restante del contenedor */
+  padding: 20px;
+  background-color: white;
+}
